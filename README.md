@@ -15,5 +15,10 @@ kappa_in = elongation of plasma away from x-point (eq_options 1, 2, and 3)
 nu_in = beta_p like parameter (see JOPP 2021 paper for details)
 B0 = magnetic field on axis in Tesla
 
-
 The script generates a geqdsk output file with the name 'geqdsk_analytic' upon completion.
+
+The script can be buggy if input parameters go outside typical bounds for tokamak equilibria.  Users should experiment with input parameters to get a feel for the code before using in an automated manner.
+
+The heart of the code was originally written by Luca Guazzotto (Auburn U.), and adapted for the GEQDSK format by Greg Wallace (MIT).
+
+Requires a recent release of MATLAB.  Tested with R2020b by the author.  Earlier versions (e.g. R2015b) may not work.
